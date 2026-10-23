@@ -36,6 +36,7 @@ namespace Lab05_MultiForm
 
         private StatusStrip statusStripMain;
         private ToolStripStatusLabel lblTrangThai;
+        private ToolStripStatusLabel lblSpringSpacer;
         private ToolStripStatusLabel lblNguoiDung;
         private ToolStripStatusLabel lblDongHo;
         private System.Windows.Forms.Timer timerDongHo;
@@ -76,13 +77,14 @@ namespace Lab05_MultiForm
 
             this.statusStripMain = new StatusStrip();
             this.lblTrangThai = new ToolStripStatusLabel();
+            this.lblSpringSpacer = new ToolStripStatusLabel();
             this.lblNguoiDung = new ToolStripStatusLabel();
             this.lblDongHo = new ToolStripStatusLabel();
             this.timerDongHo = new System.Windows.Forms.Timer();
 
-            // Form Properties
+            // Form Properties: generous size so child forms never overflow
             this.Text = "LAB 5: XỬ LÝ SỰ KIỆN, KIỂM TRA DỮ LIỆU VÀ ỨNG DỤNG ĐA FORM";
-            this.Size = new Size(880, 580);
+            this.Size = new Size(1020, 680);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.IsMdiContainer = true;
 
@@ -168,20 +170,24 @@ namespace Lab05_MultiForm
             });
 
             // 3. StatusStrip (Bài 10)
-            this.lblTrangThai.Text = "Sẵn sàng";
-            this.lblTrangThai.Spring = true;
+            this.lblTrangThai.Text = "Hệ thống sẵn sàng";
+            this.lblTrangThai.AutoSize = true;
             this.lblTrangThai.TextAlign = ContentAlignment.MiddleLeft;
 
+            this.lblSpringSpacer.Spring = true;
+
             this.lblNguoiDung.Text = "Người dùng: Phan Văn Thắng (24002545)";
+            this.lblNguoiDung.AutoSize = true;
             this.lblNguoiDung.BorderSides = ToolStripStatusLabelBorderSides.Left;
             this.lblNguoiDung.BorderStyle = Border3DStyle.Etched;
 
             this.lblDongHo.Text = DateTime.Now.ToString("HH:mm:ss dd/MM/yyyy");
+            this.lblDongHo.AutoSize = true;
             this.lblDongHo.BorderSides = ToolStripStatusLabelBorderSides.Left;
             this.lblDongHo.BorderStyle = Border3DStyle.Etched;
 
             this.statusStripMain.Items.AddRange(new ToolStripItem[] {
-                lblTrangThai, lblNguoiDung, lblDongHo
+                lblTrangThai, lblSpringSpacer, lblNguoiDung, lblDongHo
             });
 
             // Đồng hồ thời gian thực
@@ -211,14 +217,16 @@ namespace Lab05_MultiForm
                     f.WindowState = FormWindowState.Normal;
                     f.Activate();
                     child.Dispose();
-                    lblTrangThai.Text = $"Kích hoạt lại Form: {f.Text}";
+                    lblTrangThai.Text = $"Kích hoạt lại: {f.Text}";
                     return;
                 }
             }
 
             child.MdiParent = this;
+            child.StartPosition = FormStartPosition.Manual;
+            child.Location = new Point(20, 15);
             child.Show();
-            lblTrangThai.Text = $"Đã mở Form: {child.Text}";
+            lblTrangThai.Text = $"Đang mở: {child.Text}";
         }
 
         private void MoDangNhap()

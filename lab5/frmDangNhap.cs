@@ -45,7 +45,7 @@ namespace Lab05_MultiForm
             this.timerKhoa.Tick += TimerKhoa_Tick;
 
             this.Text = "Bài 6: Đăng nhập hệ thống";
-            this.Size = new Size(420, 290);
+            this.Size = new Size(460, 310);
             this.StartPosition = FormStartPosition.CenterParent;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -53,32 +53,32 @@ namespace Lab05_MultiForm
 
             // Title
             this.lblTitle.Text = "ĐĂNG NHẬP HỆ THỐNG";
-            this.lblTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            this.lblTitle.Location = new Point(115, 18);
+            this.lblTitle.Font = new Font("Segoe UI", 12.5F, FontStyle.Bold);
+            this.lblTitle.Location = new Point(135, 20);
             this.lblTitle.AutoSize = true;
 
             // Tên đăng nhập
             this.lblTenDangNhap.Text = "Tên đăng nhập:";
-            this.lblTenDangNhap.Location = new Point(35, 62);
+            this.lblTenDangNhap.Location = new Point(35, 65);
             this.lblTenDangNhap.AutoSize = true;
 
-            this.txtTenDangNhap.Location = new Point(140, 59);
-            this.txtTenDangNhap.Size = new Size(220, 23);
+            this.txtTenDangNhap.Location = new Point(145, 62);
+            this.txtTenDangNhap.Size = new Size(250, 23);
             this.txtTenDangNhap.Text = "admin";
 
             // Mật khẩu
             this.lblMatKhau.Text = "Mật khẩu:";
-            this.lblMatKhau.Location = new Point(35, 100);
+            this.lblMatKhau.Location = new Point(35, 105);
             this.lblMatKhau.AutoSize = true;
 
-            this.txtMatKhau.Location = new Point(140, 97);
-            this.txtMatKhau.Size = new Size(220, 23);
+            this.txtMatKhau.Location = new Point(145, 102);
+            this.txtMatKhau.Size = new Size(250, 23);
             this.txtMatKhau.UseSystemPasswordChar = true;
             this.txtMatKhau.Text = "123456";
 
             // Checkbox hiển thị mật khẩu
             this.chkHienMatKhau.Text = "Hiển thị mật khẩu";
-            this.chkHienMatKhau.Location = new Point(140, 130);
+            this.chkHienMatKhau.Location = new Point(145, 135);
             this.chkHienMatKhau.AutoSize = true;
             this.chkHienMatKhau.CheckedChanged += (s, e) =>
             {
@@ -87,20 +87,20 @@ namespace Lab05_MultiForm
 
             // Thông báo lỗi / đếm ngược
             this.lblThongBao.Text = "";
-            this.lblThongBao.Location = new Point(35, 160);
-            this.lblThongBao.Size = new Size(335, 30);
+            this.lblThongBao.Location = new Point(25, 165);
+            this.lblThongBao.Size = new Size(395, 35);
             this.lblThongBao.TextAlign = ContentAlignment.MiddleCenter;
 
             // Buttons
             this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.Location = new Point(105, 200);
-            this.btnDangNhap.Size = new Size(100, 32);
+            this.btnDangNhap.Location = new Point(115, 215);
+            this.btnDangNhap.Size = new Size(105, 34);
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += BtnDangNhap_Click;
 
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.Location = new Point(225, 200);
-            this.btnThoat.Size = new Size(100, 32);
+            this.btnThoat.Location = new Point(240, 215);
+            this.btnThoat.Size = new Size(105, 34);
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += (s, e) =>
             {

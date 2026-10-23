@@ -78,15 +78,15 @@ namespace Lab05_MultiForm
             this.errorProvider1 = new ErrorProvider();
 
             this.Text = "Quản lý thông tin sinh viên (Bài 1 - 5)";
-            this.Size = new Size(680, 520);
+            this.Size = new Size(740, 520);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
 
             // Title
             this.lblTitle.Text = "QUẢN LÝ THÔNG TIN SINH VIÊN";
-            this.lblTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            this.lblTitle.Location = new Point(200, 15);
+            this.lblTitle.Font = new Font("Segoe UI", 12.5F, FontStyle.Bold);
+            this.lblTitle.Location = new Point(230, 15);
             this.lblTitle.AutoSize = true;
 
             // Mã sinh viên
@@ -95,7 +95,7 @@ namespace Lab05_MultiForm
             this.lblMaSV.AutoSize = true;
 
             this.txtMaSV.Location = new Point(125, 52);
-            this.txtMaSV.Size = new Size(200, 23);
+            this.txtMaSV.Size = new Size(215, 23);
             this.txtMaSV.Text = "24002545";
             this.txtMaSV.TextChanged += Input_TextChanged;
 
@@ -105,7 +105,7 @@ namespace Lab05_MultiForm
             this.lblHoTen.AutoSize = true;
 
             this.txtHoTen.Location = new Point(125, 87);
-            this.txtHoTen.Size = new Size(200, 23);
+            this.txtHoTen.Size = new Size(215, 23);
             this.txtHoTen.Text = "Phan Văn Thắng";
             this.txtHoTen.TextChanged += Input_TextChanged;
 
@@ -117,7 +117,7 @@ namespace Lab05_MultiForm
             this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
             this.dtpNgaySinh.Format = DateTimePickerFormat.Custom;
             this.dtpNgaySinh.Location = new Point(125, 122);
-            this.dtpNgaySinh.Size = new Size(200, 23);
+            this.dtpNgaySinh.Size = new Size(215, 23);
             this.dtpNgaySinh.Value = new DateTime(2006, 3, 26);
 
             // Giới tính
@@ -127,12 +127,12 @@ namespace Lab05_MultiForm
 
             this.radNam.Text = "Nam";
             this.radNam.Location = new Point(125, 158);
-            this.radNam.Size = new Size(60, 20);
+            this.radNam.Size = new Size(65, 20);
             this.radNam.Checked = true;
 
             this.radNu.Text = "Nữ";
-            this.radNu.Location = new Point(200, 158);
-            this.radNu.Size = new Size(60, 20);
+            this.radNu.Location = new Point(205, 158);
+            this.radNu.Size = new Size(65, 20);
 
             // Khoa
             this.lblKhoa.Text = "Khoa:";
@@ -140,7 +140,7 @@ namespace Lab05_MultiForm
             this.lblKhoa.AutoSize = true;
 
             this.cboKhoa.Location = new Point(125, 192);
-            this.cboKhoa.Size = new Size(200, 23);
+            this.cboKhoa.Size = new Size(215, 23);
             this.cboKhoa.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cboKhoa.Items.AddRange(new object[] {
                 "Công nghệ thông tin",
@@ -154,8 +154,8 @@ namespace Lab05_MultiForm
 
             // Nút chọn khoa (Bài 8)
             this.btnChonKhoa.Text = "Chọn...";
-            this.btnChonKhoa.Location = new Point(332, 190);
-            this.btnChonKhoa.Size = new Size(58, 26);
+            this.btnChonKhoa.Location = new Point(350, 190);
+            this.btnChonKhoa.Size = new Size(65, 26);
             this.btnChonKhoa.UseVisualStyleBackColor = true;
             this.btnChonKhoa.Click += BtnChonKhoa_Click;
 
@@ -165,7 +165,7 @@ namespace Lab05_MultiForm
             this.lblDiemTB.AutoSize = true;
 
             this.txtDiemTB.Location = new Point(125, 227);
-            this.txtDiemTB.Size = new Size(200, 23);
+            this.txtDiemTB.Size = new Size(215, 23);
             this.txtDiemTB.Text = "8.50";
             this.txtDiemTB.KeyPress += txtDiemTB_KeyPress;
             this.txtDiemTB.TextChanged += Input_TextChanged;
@@ -173,7 +173,7 @@ namespace Lab05_MultiForm
             // GroupBox Sở thích
             this.grpSoThich.Text = "Sở thích cá nhân";
             this.grpSoThich.Location = new Point(25, 265);
-            this.grpSoThich.Size = new Size(365, 70);
+            this.grpSoThich.Size = new Size(390, 70);
 
             this.chkDocSach.Text = "Đọc sách";
             this.chkDocSach.Location = new Point(15, 25);
@@ -181,16 +181,16 @@ namespace Lab05_MultiForm
             this.chkDocSach.Checked = true;
 
             this.chkTheThao.Text = "Thể thao";
-            this.chkTheThao.Location = new Point(105, 25);
+            this.chkTheThao.Location = new Point(110, 25);
             this.chkTheThao.AutoSize = true;
 
             this.chkLapTrinh.Text = "Lập trình";
-            this.chkLapTrinh.Location = new Point(190, 25);
+            this.chkLapTrinh.Location = new Point(200, 25);
             this.chkLapTrinh.AutoSize = true;
             this.chkLapTrinh.Checked = true;
 
             this.chkDuLich.Text = "Du lịch";
-            this.chkDuLich.Location = new Point(280, 25);
+            this.chkDuLich.Location = new Point(295, 25);
             this.chkDuLich.AutoSize = true;
 
             this.grpSoThich.Controls.AddRange(new Control[] {
@@ -199,18 +199,18 @@ namespace Lab05_MultiForm
 
             // GroupBox Ảnh đại diện
             this.grpAnh.Text = "Ảnh sinh viên";
-            this.grpAnh.Location = new Point(420, 50);
-            this.grpAnh.Size = new Size(220, 215);
+            this.grpAnh.Location = new Point(445, 50);
+            this.grpAnh.Size = new Size(245, 215);
 
-            this.picAnh.Location = new Point(20, 22);
-            this.picAnh.Size = new Size(180, 145);
+            this.picAnh.Location = new Point(25, 22);
+            this.picAnh.Size = new Size(195, 145);
             this.picAnh.BorderStyle = BorderStyle.FixedSingle;
             this.picAnh.SizeMode = PictureBoxSizeMode.Zoom;
             LoadDefaultAvatar();
 
             this.btnChonAnh.Text = "Chọn ảnh...";
-            this.btnChonAnh.Location = new Point(60, 175);
-            this.btnChonAnh.Size = new Size(100, 28);
+            this.btnChonAnh.Location = new Point(70, 175);
+            this.btnChonAnh.Size = new Size(105, 28);
             this.btnChonAnh.UseVisualStyleBackColor = true;
             this.btnChonAnh.Click += BtnChonAnh_Click;
 
@@ -220,7 +220,7 @@ namespace Lab05_MultiForm
             // GroupBox Trạng thái thời gian thực (Bài 3)
             this.grpTrangThai.Text = "Cập nhật thời gian thực (Bài 3)";
             this.grpTrangThai.Location = new Point(25, 345);
-            this.grpTrangThai.Size = new Size(615, 75);
+            this.grpTrangThai.Size = new Size(665, 75);
 
             this.lblXemTruocTitle.Text = "Xem trước:";
             this.lblXemTruocTitle.Location = new Point(15, 25);
@@ -228,7 +228,7 @@ namespace Lab05_MultiForm
 
             this.lblXemTruoc.Text = "24002545 - Phan Văn Thắng";
             this.lblXemTruoc.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblXemTruoc.Location = new Point(90, 25);
+            this.lblXemTruoc.Location = new Point(95, 25);
             this.lblXemTruoc.AutoSize = true;
 
             this.lblTrangThaiDiemTitle.Text = "Trạng thái:";
@@ -237,7 +237,7 @@ namespace Lab05_MultiForm
 
             this.lblTrangThaiDiem.Text = "Dữ liệu điểm hợp lệ";
             this.lblTrangThaiDiem.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblTrangThaiDiem.Location = new Point(90, 48);
+            this.lblTrangThaiDiem.Location = new Point(95, 48);
             this.lblTrangThaiDiem.AutoSize = true;
 
             this.grpTrangThai.Controls.AddRange(new Control[] {
@@ -247,32 +247,32 @@ namespace Lab05_MultiForm
 
             // Action Buttons
             this.btnLuu.Text = "Lưu (Bài 1)";
-            this.btnLuu.Location = new Point(45, 435);
-            this.btnLuu.Size = new Size(100, 32);
+            this.btnLuu.Location = new Point(35, 435);
+            this.btnLuu.Size = new Size(110, 32);
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += BtnLuu_Click;
 
             this.btnXemChiTiet.Text = "Chi tiết (Bài 4)";
             this.btnXemChiTiet.Location = new Point(160, 435);
-            this.btnXemChiTiet.Size = new Size(115, 32);
+            this.btnXemChiTiet.Size = new Size(125, 32);
             this.btnXemChiTiet.UseVisualStyleBackColor = true;
             this.btnXemChiTiet.Click += BtnXemChiTiet_Click;
 
             this.btnTimKiem.Text = "Tìm kiếm (Bài 7)";
-            this.btnTimKiem.Location = new Point(290, 435);
-            this.btnTimKiem.Size = new Size(115, 32);
+            this.btnTimKiem.Location = new Point(300, 435);
+            this.btnTimKiem.Size = new Size(125, 32);
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += BtnTimKiem_Click;
 
             this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.Location = new Point(420, 435);
-            this.btnLamMoi.Size = new Size(95, 32);
+            this.btnLamMoi.Location = new Point(440, 435);
+            this.btnLamMoi.Size = new Size(100, 32);
             this.btnLamMoi.UseVisualStyleBackColor = true;
             this.btnLamMoi.Click += BtnLamMoi_Click;
 
             this.btnDong.Text = "Đóng";
-            this.btnDong.Location = new Point(530, 435);
-            this.btnDong.Size = new Size(95, 32);
+            this.btnDong.Location = new Point(555, 435);
+            this.btnDong.Size = new Size(110, 32);
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += (s, e) => this.Close();
 
@@ -291,7 +291,6 @@ namespace Lab05_MultiForm
                 btnLuu, btnXemChiTiet, btnTimKiem, btnLamMoi, btnDong
             });
 
-            // Trigger initial state
             Input_TextChanged(this, EventArgs.Empty);
         }
 
@@ -316,7 +315,6 @@ namespace Lab05_MultiForm
             }
         }
 
-        // Bài 1: Kiểm tra bắt buộc bằng ErrorProvider
         public bool ValidateInput()
         {
             errorProvider1.Clear();
@@ -343,7 +341,6 @@ namespace Lab05_MultiForm
             return valid;
         }
 
-        // Bài 2: Giới hạn ký tự nhập điểm bằng KeyPress
         private void txtDiemTB_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsControl(e.KeyChar)) return;
@@ -352,7 +349,6 @@ namespace Lab05_MultiForm
             e.Handled = true;
         }
 
-        // Bài 3: Cập nhật trạng thái theo thời gian thực bằng TextChanged
         private void Input_TextChanged(object sender, EventArgs e)
         {
             double diem;
@@ -407,7 +403,6 @@ namespace Lab05_MultiForm
             }
         }
 
-        // Bài 4: Mở Form chi tiết truyền đối tượng qua Constructor
         private void BtnXemChiTiet_Click(object sender, EventArgs e)
         {
             if (ValidateInput())
@@ -424,7 +419,6 @@ namespace Lab05_MultiForm
             }
         }
 
-        // Bài 7: Hộp thoại tìm kiếm
         private void BtnTimKiem_Click(object sender, EventArgs e)
         {
             using (frmTimKiem f = new frmTimKiem())
@@ -445,7 +439,6 @@ namespace Lab05_MultiForm
             }
         }
 
-        // Bài 8: Mở Form chọn khoa không dùng biến toàn cục
         private void BtnChonKhoa_Click(object sender, EventArgs e)
         {
             List<string> ds = new List<string>();

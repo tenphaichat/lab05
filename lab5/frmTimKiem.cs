@@ -36,7 +36,7 @@ namespace Lab05_MultiForm
             this.btnDong = new Button();
 
             this.Text = "Bài 7: Hộp thoại tìm kiếm";
-            this.Size = new Size(420, 260);
+            this.Size = new Size(460, 270);
             this.StartPosition = FormStartPosition.CenterParent;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -51,35 +51,35 @@ namespace Lab05_MultiForm
             this.lblTuKhoa.Location = new Point(25, 60);
             this.lblTuKhoa.AutoSize = true;
 
-            this.txtTuKhoa.Location = new Point(100, 57);
-            this.txtTuKhoa.Size = new Size(275, 23);
+            this.txtTuKhoa.Location = new Point(105, 57);
+            this.txtTuKhoa.Size = new Size(310, 23);
             this.txtTuKhoa.Text = "24002545";
 
             this.grpTieuChi.Text = "Tiêu chí tìm kiếm";
             this.grpTieuChi.Location = new Point(25, 95);
-            this.grpTieuChi.Size = new Size(350, 65);
+            this.grpTieuChi.Size = new Size(390, 65);
 
             this.radTheoMa.Text = "Tìm theo Mã sinh viên";
-            this.radTheoMa.Location = new Point(20, 25);
+            this.radTheoMa.Location = new Point(25, 25);
             this.radTheoMa.AutoSize = true;
             this.radTheoMa.Checked = true;
 
             this.radTheoTen.Text = "Tìm theo Họ và tên";
-            this.radTheoTen.Location = new Point(180, 25);
+            this.radTheoTen.Location = new Point(210, 25);
             this.radTheoTen.AutoSize = true;
 
             this.grpTieuChi.Controls.Add(radTheoMa);
             this.grpTieuChi.Controls.Add(radTheoTen);
 
             this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.Location = new Point(105, 175);
-            this.btnTimKiem.Size = new Size(95, 30);
+            this.btnTimKiem.Location = new Point(125, 175);
+            this.btnTimKiem.Size = new Size(100, 32);
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += BtnTimKiem_Click;
 
             this.btnDong.Text = "Đóng";
-            this.btnDong.Location = new Point(220, 175);
-            this.btnDong.Size = new Size(95, 30);
+            this.btnDong.Location = new Point(245, 175);
+            this.btnDong.Size = new Size(100, 32);
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += (s, e) =>
             {

@@ -1,9 +1,3 @@
-========================================================================
-BÁO CÁO KẾT QUẢ THỰC HÀNH LAB 5: XỬ LÝ SỰ KIỆN, KIỂM TRA DỮ LIỆU VÀ ĐA FORM
-HỌC PHẦN: LẬP TRÌNH .NET (IT3212) - ĐẠI HỌC CÔNG NGHỆ ĐÔNG Á
-SINH VIÊN THỰC HIỆN: PHAN VĂN THẮNG - MSSV: 24002545 - LỚP: IT3212
-========================================================================
-
 1. HƯỚNG DẪN BIÊN DỊCH VÀ CHẠY
 - Yêu cầu môi trường: Visual Studio 2022 hoặc .NET SDK (>= .NET 8 / .NET 9 hỗ trợ Windows Forms Desktop).
 - Mở bằng Visual Studio:

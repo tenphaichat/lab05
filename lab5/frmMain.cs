@@ -84,7 +84,7 @@ namespace Lab05_MultiForm
 
             // Form Properties: generous size so child forms never overflow
             this.Text = "LAB 5: XỬ LÝ SỰ KIỆN, KIỂM TRA DỮ LIỆU VÀ ỨNG DỤNG ĐA FORM";
-            this.Size = new Size(1020, 680);
+            this.Size = new Size(1100, 720);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.IsMdiContainer = true;
 
@@ -145,16 +145,19 @@ namespace Lab05_MultiForm
             });
 
             // 2. ToolStrip
+            this.toolStripQuick.GripStyle = ToolStripGripStyle.Hidden;
+            this.toolStripQuick.Padding = new Padding(6, 2, 6, 2);
+
             this.btnToolSinhVien.Text = " Sinh viên ";
             this.btnToolSinhVien.Click += (s, e) => OpenChildForm(new frmSinhVien());
 
-            this.btnToolChiTiet.Text = " Chi tiết ";
+            this.btnToolChiTiet.Text = " Chi tiết SV ";
             this.btnToolChiTiet.Click += (s, e) => MoChiTietSinhVien();
 
             this.btnToolTimKiem.Text = " Tìm kiếm ";
             this.btnToolTimKiem.Click += (s, e) => MoTimKiem();
 
-            this.btnToolChonKhoa.Text = " Khoa ";
+            this.btnToolChonKhoa.Text = " Chọn khoa ";
             this.btnToolChonKhoa.Click += (s, e) => MoChonKhoa();
 
             this.btnToolDangNhap.Text = " Đăng nhập ";
@@ -224,7 +227,7 @@ namespace Lab05_MultiForm
 
             child.MdiParent = this;
             child.StartPosition = FormStartPosition.Manual;
-            child.Location = new Point(20, 15);
+            child.Location = new Point(25, 20);
             child.Show();
             lblTrangThai.Text = $"Đang mở: {child.Text}";
         }

@@ -59,7 +59,7 @@ namespace Lab05_MultiForm
             this.btnHuy = new Button();
 
             this.Text = "Bài 8: Chọn khoa đào tạo";
-            this.Size = new Size(420, 340);
+            this.Size = new Size(450, 360);
             this.StartPosition = FormStartPosition.CenterParent;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -71,19 +71,20 @@ namespace Lab05_MultiForm
             this.lblHuongDan.AutoSize = true;
 
             this.lstKhoa.Location = new Point(25, 50);
-            this.lstKhoa.Size = new Size(355, 170);
-            this.lstKhoa.Font = new Font("Segoe UI", 9.5F);
+            this.lstKhoa.Size = new Size(385, 185);
+            this.lstKhoa.Font = new Font("Segoe UI", 10F);
+            this.lstKhoa.ItemHeight = 22;
             this.lstKhoa.DoubleClick += (s, e) => BtnChon_Click(s, e);
 
             this.btnChon.Text = "Chọn khoa";
-            this.btnChon.Location = new Point(95, 245);
-            this.btnChon.Size = new Size(105, 32);
+            this.btnChon.Location = new Point(105, 255);
+            this.btnChon.Size = new Size(110, 34);
             this.btnChon.UseVisualStyleBackColor = true;
             this.btnChon.Click += BtnChon_Click;
 
             this.btnHuy.Text = "Hủy bỏ";
-            this.btnHuy.Location = new Point(220, 245);
-            this.btnHuy.Size = new Size(105, 32);
+            this.btnHuy.Location = new Point(235, 255);
+            this.btnHuy.Size = new Size(110, 34);
             this.btnHuy.UseVisualStyleBackColor = true;
             this.btnHuy.Click += (s, e) =>
             {

@@ -60,21 +60,21 @@ namespace Lab05_MultiForm
             this.btnDong = new Button();
 
             this.Text = "Bài 4: Chi tiết sinh viên";
-            this.Size = new Size(640, 430);
+            this.Size = new Size(660, 440);
             this.StartPosition = FormStartPosition.CenterParent;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
 
             // Form Title
             this.lblTitle.Text = "HỒ SƠ CHI TIẾT SINH VIÊN";
-            this.lblTitle.Font = new Font("Segoe UI", 12.5F, FontStyle.Bold);
-            this.lblTitle.Location = new Point(210, 15);
+            this.lblTitle.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            this.lblTitle.Location = new Point(215, 15);
             this.lblTitle.AutoSize = true;
 
             // GroupBox Thông tin
             this.grpThongTin.Text = "Thông tin cá nhân & học tập";
             this.grpThongTin.Location = new Point(20, 50);
-            this.grpThongTin.Size = new Size(380, 300);
+            this.grpThongTin.Size = new Size(390, 310);
 
             // Mã SV
             this.lblMaTitle.Text = "Mã sinh viên:";
@@ -82,8 +82,8 @@ namespace Lab05_MultiForm
             this.lblMaTitle.AutoSize = true;
 
             this.lblMa.Text = _sinhVien.MaSV;
-            this.lblMa.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblMa.Location = new Point(125, 28);
+            this.lblMa.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            this.lblMa.Location = new Point(130, 28);
             this.lblMa.AutoSize = true;
 
             // Họ tên
@@ -92,8 +92,8 @@ namespace Lab05_MultiForm
             this.lblHoTenTitle.AutoSize = true;
 
             this.lblHoTen.Text = _sinhVien.HoTen;
-            this.lblHoTen.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblHoTen.Location = new Point(125, 60);
+            this.lblHoTen.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            this.lblHoTen.Location = new Point(130, 60);
             this.lblHoTen.AutoSize = true;
 
             // Ngày sinh
@@ -102,7 +102,7 @@ namespace Lab05_MultiForm
             this.lblNgaySinhTitle.AutoSize = true;
 
             this.lblNgaySinh.Text = $"{_sinhVien.NgaySinh:dd/MM/yyyy} (Tuổi: {_sinhVien.TinhTuoi()})";
-            this.lblNgaySinh.Location = new Point(125, 92);
+            this.lblNgaySinh.Location = new Point(130, 92);
             this.lblNgaySinh.AutoSize = true;
 
             // Giới tính
@@ -111,7 +111,7 @@ namespace Lab05_MultiForm
             this.lblGioiTinhTitle.AutoSize = true;
 
             this.lblGioiTinh.Text = _sinhVien.GioiTinh;
-            this.lblGioiTinh.Location = new Point(125, 124);
+            this.lblGioiTinh.Location = new Point(130, 124);
             this.lblGioiTinh.AutoSize = true;
 
             // Khoa
@@ -120,7 +120,7 @@ namespace Lab05_MultiForm
             this.lblKhoaTitle.AutoSize = true;
 
             this.lblKhoa.Text = _sinhVien.Khoa;
-            this.lblKhoa.Location = new Point(125, 156);
+            this.lblKhoa.Location = new Point(130, 156);
             this.lblKhoa.AutoSize = true;
 
             // Điểm TB
@@ -129,8 +129,8 @@ namespace Lab05_MultiForm
             this.lblDiemTitle.AutoSize = true;
 
             this.lblDiem.Text = _sinhVien.DiemTB.ToString("N2");
-            this.lblDiem.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblDiem.Location = new Point(125, 188);
+            this.lblDiem.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            this.lblDiem.Location = new Point(130, 188);
             this.lblDiem.AutoSize = true;
 
             // Xếp loại
@@ -139,8 +139,8 @@ namespace Lab05_MultiForm
             this.lblXepLoaiTitle.AutoSize = true;
 
             this.lblXepLoai.Text = _sinhVien.XepLoai();
-            this.lblXepLoai.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblXepLoai.Location = new Point(125, 220);
+            this.lblXepLoai.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            this.lblXepLoai.Location = new Point(130, 220);
             this.lblXepLoai.AutoSize = true;
 
             // Sở thích
@@ -149,7 +149,7 @@ namespace Lab05_MultiForm
             this.lblSoThichTitle.AutoSize = true;
 
             this.lblSoThich.Text = string.IsNullOrEmpty(_sinhVien.SoThich) ? "Chưa chọn" : _sinhVien.SoThich;
-            this.lblSoThich.Location = new Point(125, 252);
+            this.lblSoThich.Location = new Point(130, 252);
             this.lblSoThich.AutoSize = true;
 
             this.grpThongTin.Controls.AddRange(new Control[] {
@@ -165,11 +165,11 @@ namespace Lab05_MultiForm
 
             // GroupBox Ảnh
             this.grpAnh.Text = "Ảnh đại diện";
-            this.grpAnh.Location = new Point(420, 50);
-            this.grpAnh.Size = new Size(185, 230);
+            this.grpAnh.Location = new Point(430, 50);
+            this.grpAnh.Size = new Size(195, 240);
 
             this.picAnh.Location = new Point(20, 25);
-            this.picAnh.Size = new Size(145, 180);
+            this.picAnh.Size = new Size(155, 190);
             this.picAnh.BorderStyle = BorderStyle.FixedSingle;
             this.picAnh.SizeMode = PictureBoxSizeMode.Zoom;
 
@@ -198,8 +198,8 @@ namespace Lab05_MultiForm
 
             // Nút Đóng
             this.btnDong.Text = "Đóng";
-            this.btnDong.Location = new Point(455, 305);
-            this.btnDong.Size = new Size(115, 34);
+            this.btnDong.Location = new Point(470, 310);
+            this.btnDong.Size = new Size(120, 34);
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += (s, e) => this.Close();
 

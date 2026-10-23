@@ -78,69 +78,69 @@ namespace Lab05_MultiForm
             this.errorProvider1 = new ErrorProvider();
 
             this.Text = "Quản lý thông tin sinh viên (Bài 1 - 5)";
-            this.Size = new Size(740, 520);
+            this.Size = new Size(780, 540);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
 
             // Title
             this.lblTitle.Text = "QUẢN LÝ THÔNG TIN SINH VIÊN";
-            this.lblTitle.Font = new Font("Segoe UI", 12.5F, FontStyle.Bold);
-            this.lblTitle.Location = new Point(230, 15);
+            this.lblTitle.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            this.lblTitle.Location = new Point(250, 15);
             this.lblTitle.AutoSize = true;
 
             // Mã sinh viên
             this.lblMaSV.Text = "Mã sinh viên:";
-            this.lblMaSV.Location = new Point(25, 55);
+            this.lblMaSV.Location = new Point(25, 60);
             this.lblMaSV.AutoSize = true;
 
-            this.txtMaSV.Location = new Point(125, 52);
-            this.txtMaSV.Size = new Size(215, 23);
+            this.txtMaSV.Location = new Point(135, 57);
+            this.txtMaSV.Size = new Size(220, 23);
             this.txtMaSV.Text = "24002545";
             this.txtMaSV.TextChanged += Input_TextChanged;
 
             // Họ tên
             this.lblHoTen.Text = "Họ và tên:";
-            this.lblHoTen.Location = new Point(25, 90);
+            this.lblHoTen.Location = new Point(25, 95);
             this.lblHoTen.AutoSize = true;
 
-            this.txtHoTen.Location = new Point(125, 87);
-            this.txtHoTen.Size = new Size(215, 23);
+            this.txtHoTen.Location = new Point(135, 92);
+            this.txtHoTen.Size = new Size(220, 23);
             this.txtHoTen.Text = "Phan Văn Thắng";
             this.txtHoTen.TextChanged += Input_TextChanged;
 
             // Ngày sinh
             this.lblNgaySinh.Text = "Ngày sinh:";
-            this.lblNgaySinh.Location = new Point(25, 125);
+            this.lblNgaySinh.Location = new Point(25, 130);
             this.lblNgaySinh.AutoSize = true;
 
             this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
             this.dtpNgaySinh.Format = DateTimePickerFormat.Custom;
-            this.dtpNgaySinh.Location = new Point(125, 122);
-            this.dtpNgaySinh.Size = new Size(215, 23);
+            this.dtpNgaySinh.Location = new Point(135, 127);
+            this.dtpNgaySinh.Size = new Size(220, 23);
             this.dtpNgaySinh.Value = new DateTime(2006, 3, 26);
 
             // Giới tính
             this.lblGioiTinh.Text = "Giới tính:";
-            this.lblGioiTinh.Location = new Point(25, 160);
+            this.lblGioiTinh.Location = new Point(25, 165);
             this.lblGioiTinh.AutoSize = true;
 
             this.radNam.Text = "Nam";
-            this.radNam.Location = new Point(125, 158);
+            this.radNam.Location = new Point(135, 163);
             this.radNam.Size = new Size(65, 20);
             this.radNam.Checked = true;
 
             this.radNu.Text = "Nữ";
-            this.radNu.Location = new Point(205, 158);
+            this.radNu.Location = new Point(225, 163);
             this.radNu.Size = new Size(65, 20);
 
             // Khoa
             this.lblKhoa.Text = "Khoa:";
-            this.lblKhoa.Location = new Point(25, 195);
+            this.lblKhoa.Location = new Point(25, 200);
             this.lblKhoa.AutoSize = true;
 
-            this.cboKhoa.Location = new Point(125, 192);
-            this.cboKhoa.Size = new Size(215, 23);
+            this.cboKhoa.Location = new Point(135, 197);
+            this.cboKhoa.Size = new Size(220, 23);
             this.cboKhoa.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cboKhoa.Items.AddRange(new object[] {
                 "Công nghệ thông tin",
@@ -154,43 +154,43 @@ namespace Lab05_MultiForm
 
             // Nút chọn khoa (Bài 8)
             this.btnChonKhoa.Text = "Chọn...";
-            this.btnChonKhoa.Location = new Point(350, 190);
-            this.btnChonKhoa.Size = new Size(65, 26);
+            this.btnChonKhoa.Location = new Point(365, 195);
+            this.btnChonKhoa.Size = new Size(70, 27);
             this.btnChonKhoa.UseVisualStyleBackColor = true;
             this.btnChonKhoa.Click += BtnChonKhoa_Click;
 
             // Điểm trung bình (Bài 2 KeyPress)
             this.lblDiemTB.Text = "Điểm TB:";
-            this.lblDiemTB.Location = new Point(25, 230);
+            this.lblDiemTB.Location = new Point(25, 235);
             this.lblDiemTB.AutoSize = true;
 
-            this.txtDiemTB.Location = new Point(125, 227);
-            this.txtDiemTB.Size = new Size(215, 23);
+            this.txtDiemTB.Location = new Point(135, 232);
+            this.txtDiemTB.Size = new Size(220, 23);
             this.txtDiemTB.Text = "8.50";
             this.txtDiemTB.KeyPress += txtDiemTB_KeyPress;
             this.txtDiemTB.TextChanged += Input_TextChanged;
 
             // GroupBox Sở thích
             this.grpSoThich.Text = "Sở thích cá nhân";
-            this.grpSoThich.Location = new Point(25, 265);
-            this.grpSoThich.Size = new Size(390, 70);
+            this.grpSoThich.Location = new Point(25, 275);
+            this.grpSoThich.Size = new Size(420, 75);
 
             this.chkDocSach.Text = "Đọc sách";
-            this.chkDocSach.Location = new Point(15, 25);
+            this.chkDocSach.Location = new Point(15, 28);
             this.chkDocSach.AutoSize = true;
             this.chkDocSach.Checked = true;
 
             this.chkTheThao.Text = "Thể thao";
-            this.chkTheThao.Location = new Point(110, 25);
+            this.chkTheThao.Location = new Point(115, 28);
             this.chkTheThao.AutoSize = true;
 
             this.chkLapTrinh.Text = "Lập trình";
-            this.chkLapTrinh.Location = new Point(200, 25);
+            this.chkLapTrinh.Location = new Point(210, 28);
             this.chkLapTrinh.AutoSize = true;
             this.chkLapTrinh.Checked = true;
 
             this.chkDuLich.Text = "Du lịch";
-            this.chkDuLich.Location = new Point(295, 25);
+            this.chkDuLich.Location = new Point(310, 28);
             this.chkDuLich.AutoSize = true;
 
             this.grpSoThich.Controls.AddRange(new Control[] {
@@ -199,18 +199,18 @@ namespace Lab05_MultiForm
 
             // GroupBox Ảnh đại diện
             this.grpAnh.Text = "Ảnh sinh viên";
-            this.grpAnh.Location = new Point(445, 50);
-            this.grpAnh.Size = new Size(245, 215);
+            this.grpAnh.Location = new Point(470, 50);
+            this.grpAnh.Size = new Size(270, 230);
 
-            this.picAnh.Location = new Point(25, 22);
-            this.picAnh.Size = new Size(195, 145);
+            this.picAnh.Location = new Point(25, 25);
+            this.picAnh.Size = new Size(220, 150);
             this.picAnh.BorderStyle = BorderStyle.FixedSingle;
             this.picAnh.SizeMode = PictureBoxSizeMode.Zoom;
             LoadDefaultAvatar();
 
             this.btnChonAnh.Text = "Chọn ảnh...";
-            this.btnChonAnh.Location = new Point(70, 175);
-            this.btnChonAnh.Size = new Size(105, 28);
+            this.btnChonAnh.Location = new Point(80, 185);
+            this.btnChonAnh.Size = new Size(110, 30);
             this.btnChonAnh.UseVisualStyleBackColor = true;
             this.btnChonAnh.Click += BtnChonAnh_Click;
 
@@ -219,25 +219,25 @@ namespace Lab05_MultiForm
 
             // GroupBox Trạng thái thời gian thực (Bài 3)
             this.grpTrangThai.Text = "Cập nhật thời gian thực (Bài 3)";
-            this.grpTrangThai.Location = new Point(25, 345);
-            this.grpTrangThai.Size = new Size(665, 75);
+            this.grpTrangThai.Location = new Point(25, 360);
+            this.grpTrangThai.Size = new Size(715, 80);
 
             this.lblXemTruocTitle.Text = "Xem trước:";
             this.lblXemTruocTitle.Location = new Point(15, 25);
             this.lblXemTruocTitle.AutoSize = true;
 
             this.lblXemTruoc.Text = "24002545 - Phan Văn Thắng";
-            this.lblXemTruoc.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblXemTruoc.Location = new Point(95, 25);
+            this.lblXemTruoc.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            this.lblXemTruoc.Location = new Point(110, 25);
             this.lblXemTruoc.AutoSize = true;
 
             this.lblTrangThaiDiemTitle.Text = "Trạng thái:";
-            this.lblTrangThaiDiemTitle.Location = new Point(15, 48);
+            this.lblTrangThaiDiemTitle.Location = new Point(15, 50);
             this.lblTrangThaiDiemTitle.AutoSize = true;
 
             this.lblTrangThaiDiem.Text = "Dữ liệu điểm hợp lệ";
-            this.lblTrangThaiDiem.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblTrangThaiDiem.Location = new Point(95, 48);
+            this.lblTrangThaiDiem.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            this.lblTrangThaiDiem.Location = new Point(110, 50);
             this.lblTrangThaiDiem.AutoSize = true;
 
             this.grpTrangThai.Controls.AddRange(new Control[] {
@@ -247,32 +247,32 @@ namespace Lab05_MultiForm
 
             // Action Buttons
             this.btnLuu.Text = "Lưu (Bài 1)";
-            this.btnLuu.Location = new Point(35, 435);
-            this.btnLuu.Size = new Size(110, 32);
+            this.btnLuu.Location = new Point(35, 455);
+            this.btnLuu.Size = new Size(120, 34);
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += BtnLuu_Click;
 
             this.btnXemChiTiet.Text = "Chi tiết (Bài 4)";
-            this.btnXemChiTiet.Location = new Point(160, 435);
-            this.btnXemChiTiet.Size = new Size(125, 32);
+            this.btnXemChiTiet.Location = new Point(175, 455);
+            this.btnXemChiTiet.Size = new Size(135, 34);
             this.btnXemChiTiet.UseVisualStyleBackColor = true;
             this.btnXemChiTiet.Click += BtnXemChiTiet_Click;
 
             this.btnTimKiem.Text = "Tìm kiếm (Bài 7)";
-            this.btnTimKiem.Location = new Point(300, 435);
-            this.btnTimKiem.Size = new Size(125, 32);
+            this.btnTimKiem.Location = new Point(330, 455);
+            this.btnTimKiem.Size = new Size(135, 34);
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += BtnTimKiem_Click;
 
             this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.Location = new Point(440, 435);
-            this.btnLamMoi.Size = new Size(100, 32);
+            this.btnLamMoi.Location = new Point(485, 455);
+            this.btnLamMoi.Size = new Size(110, 34);
             this.btnLamMoi.UseVisualStyleBackColor = true;
             this.btnLamMoi.Click += BtnLamMoi_Click;
 
             this.btnDong.Text = "Đóng";
-            this.btnDong.Location = new Point(555, 435);
-            this.btnDong.Size = new Size(110, 32);
+            this.btnDong.Location = new Point(615, 455);
+            this.btnDong.Size = new Size(115, 34);
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += (s, e) => this.Close();
 
